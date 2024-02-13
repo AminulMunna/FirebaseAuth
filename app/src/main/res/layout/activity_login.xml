@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="20dp"
+    android:background="@drawable/mainbg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Login Page"
+        app:layout_constraintEnd_toEndOf="@+id/parent"
+        app:layout_constraintStart_toStartOf="@+id/parent"
+        app:layout_constraintTop_toTopOf="@+id/parent"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/enterUsername"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/boxshape"
+        android:hint="Enter Username or Email"
+        android:paddingStart="20dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/title"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/enterPass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/boxshape"
+        android:hint="Enter Password"
+        android:paddingStart="20dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/enterUsername"
+        app:layout_constraintStart_toStartOf="@+id/enterUsername"
+        app:layout_constraintTop_toBottomOf="@+id/enterUsername"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/loginBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#7FBBC4"
+        android:text="Login"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/enterPass"
+        app:layout_constraintStart_toStartOf="@+id/enterPass"
+        app:layout_constraintTop_toBottomOf="@+id/enterPass"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/loginPageRegBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Didn't have an account?  REGISTER"
+        app:layout_constraintEnd_toEndOf="@+id/loginBTN"
+        app:layout_constraintStart_toStartOf="@+id/loginBTN"
+        app:layout_constraintTop_toBottomOf="@+id/loginBTN"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginRight="20dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

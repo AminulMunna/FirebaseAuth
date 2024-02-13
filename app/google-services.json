@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "548257247835",
+    "project_id": "authfirebaseclasspractice",
+    "storage_bucket": "authfirebaseclasspractice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548257247835:android:3136f929b655223d82857e",
+        "android_client_info": {
+          "package_name": "com.example.authfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAq_JfQzeboQho6phK7LHDozTVUGO-BIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
